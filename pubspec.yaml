@@ -1,0 +1,15 @@
+name: liwan_workspace
+publish_to: none
+description: Pub workspace for Liwan's pure Dart game packages.
+
+environment:
+  sdk: ^3.6.0
+
+workspace:
+  - packages/game_core
+  - packages/game_shatranj
+  - packages/game_mancala
+  - packages/game_dhama
+
+dev_dependencies:
+  lints: ^5.1.0

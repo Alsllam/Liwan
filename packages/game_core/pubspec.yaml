@@ -1,0 +1,11 @@
+name: game_core
+description: "Shared game interface and classic AI search (minimax/alpha-beta, MCTS) for Liwan."
+version: 0.0.1
+publish_to: none
+resolution: workspace
+
+environment:
+  sdk: ^3.6.0
+
+dev_dependencies:
+  test: ^1.25.0

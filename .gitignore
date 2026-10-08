@@ -1,0 +1,32 @@
+# Dart / Flutter
+.dart_tool/
+build/
+pubspec_overrides.yaml
+*.iml
+.idea/
+.fvm/flutter_sdk
+
+# .NET
+backend/**/bin/
+backend/**/obj/
+*.user
+.vs/
+TestResults/
+
+# Python
+__pycache__/
+*.pyc
+.venv/
+.env
+.mypy_cache/
+.pytest_cache/
+.ruff_cache/
+
+# Node / Nx
+node_modules/
+dist/
+.nx/cache
+.angular/
+
+# OS
+.DS_Store

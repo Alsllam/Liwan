@@ -1,0 +1,14 @@
+name: game_dhama
+description: "Dhama / Dama (Arabian checkers): rules engine for Liwan."
+version: 0.0.1
+publish_to: none
+resolution: workspace
+
+environment:
+  sdk: ^3.6.0
+
+dependencies:
+  game_core: any
+
+dev_dependencies:
+  test: ^1.25.0
