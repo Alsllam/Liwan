@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 60" role="img"><title>Seeds · بذور: pebble, date pit, cowrie, pearl</title>
+<defs>
+  <radialGradient id="sd-pebble" cx=".35" cy=".3" r=".9"><stop offset="0" stop-color="#E6D8C3"/><stop offset=".6" stop-color="#A8917A"/><stop offset="1" stop-color="#5C4A3D"/></radialGradient>
+  <radialGradient id="sd-date" cx=".35" cy=".3" r=".9"><stop offset="0" stop-color="#B07A4E"/><stop offset=".6" stop-color="#6B4428"/><stop offset="1" stop-color="#3A2414"/></radialGradient>
+  <radialGradient id="sd-cowrie" cx=".35" cy=".3" r=".9"><stop offset="0" stop-color="#FFFDF8"/><stop offset=".6" stop-color="#EDE3D1"/><stop offset="1" stop-color="#B9A487"/></radialGradient>
+  <radialGradient id="sd-pearl" cx=".35" cy=".3" r=".8"><stop offset="0" stop-color="#FFFFFF"/><stop offset=".5" stop-color="#F4EFE6"/><stop offset=".85" stop-color="#D9CFE0"/><stop offset="1" stop-color="#A99FB4"/></radialGradient>
+</defs>
+<g opacity=".2" fill="#1A120D"><ellipse cx="30" cy="48" rx="16" ry="4"/><ellipse cx="90" cy="48" rx="18" ry="4"/><ellipse cx="150" cy="48" rx="17" ry="4"/><ellipse cx="210" cy="48" rx="13" ry="4"/></g>
+<ellipse cx="30" cy="32" rx="16" ry="13" fill="url(#sd-pebble)"/><ellipse cx="25" cy="26" rx="5" ry="3" fill="#fff" opacity=".35"/>
+<ellipse cx="90" cy="32" rx="20" ry="10" fill="url(#sd-date)"/><path d="M73 32 Q90 28 107 32" stroke="#2A170B" stroke-width="1.6" fill="none" opacity=".7"/><ellipse cx="83" cy="27" rx="6" ry="2" fill="#fff" opacity=".25"/>
+<ellipse cx="150" cy="32" rx="18" ry="13" fill="url(#sd-cowrie)"/><path d="M134 34 Q150 30 166 34" stroke="#8C7860" stroke-width="2.2" fill="none" stroke-linecap="round"/><path d="M138 33 v3 M144 32 v3 M150 31.5 v3 M156 32 v3 M162 33 v3" stroke="#8C7860" stroke-width="1"/>
+<circle cx="210" cy="32" r="13" fill="url(#sd-pearl)"/><ellipse cx="205" cy="26" rx="4.5" ry="3" fill="#fff" opacity=".7"/>
+</svg>

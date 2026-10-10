@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" role="img"><title>حجر · Stone (ebony)</title>
+<defs>
+  <radialGradient id="stone-ebony-m-top" cx=".38" cy=".3" r=".85"><stop offset="0" stop-color="#6B5A4C"/><stop offset=".55" stop-color="#2A211C"/><stop offset="1" stop-color="#0E0A08"/></radialGradient>
+  <linearGradient id="stone-ebony-m-side" x1="0" x2="1"><stop offset="0" stop-color="#0E0A08"/><stop offset=".3" stop-color="#2A211C"/><stop offset="1" stop-color="#0E0A08"/></linearGradient>
+  <linearGradient id="stone-ebony-m-brass" x1="0" x2="1"><stop offset="0" stop-color="#7A5512"/><stop offset=".3" stop-color="#F7E7BF"/><stop offset=".55" stop-color="#C9962E"/><stop offset="1" stop-color="#7A5512"/></linearGradient>
+</defs><ellipse cx="50" cy="86" rx="40" ry="9" fill="#1A120D" opacity=".22"/><path d="M14 64 V73 A36 13 0 0 0 86 73 V64 Z" fill="url(#stone-ebony-m-side)" stroke="#000" stroke-width=".8"/><ellipse cx="50" cy="64" rx="36" ry="13" fill="url(#stone-ebony-m-top)" stroke="#000" stroke-width=".8"/><ellipse cx="50" cy="64" rx="25" ry="8.6" fill="none" stroke="#0E0A08" stroke-width="1.2" opacity=".55"/><ellipse cx="50" cy="64.8" rx="25" ry="8.6" fill="none" stroke="#fff" stroke-width=".8" opacity=".35"/><circle cx="50" cy="64" r="3.2" fill="url(#stone-ebony-m-brass)" stroke="#7A5512" stroke-width=".6"/>
+</svg>

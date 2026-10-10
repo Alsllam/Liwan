@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 120" role="img" aria-label="Baidaq (red)">
+<title>بيدق · Baidaq</title>
+<defs>
+  <linearGradient id="baidaq-red-body" x1="0" x2="1" y1="0" y2="0">
+    <stop offset="0" stop-color="#5E1912"/><stop offset=".28" stop-color="#D46A5C"/><stop offset=".5" stop-color="#A8302A"/><stop offset="1" stop-color="#5E1912"/>
+  </linearGradient>
+  <linearGradient id="baidaq-red-shade" x1="0" x2="0" y1="0" y2="1">
+    <stop offset="0" stop-color="#fff" stop-opacity=".18"/><stop offset=".55" stop-color="#fff" stop-opacity="0"/><stop offset="1" stop-color="#000" stop-opacity=".28"/>
+  </linearGradient>
+  <linearGradient id="baidaq-red-brass" x1="0" x2="1" y1="0" y2="0">
+    <stop offset="0" stop-color="#7A5512"/><stop offset=".3" stop-color="#F7E7BF"/><stop offset=".55" stop-color="#C9962E"/><stop offset="1" stop-color="#7A5512"/>
+  </linearGradient>
+  <radialGradient id="baidaq-red-gem" cx=".35" cy=".3" r=".8">
+    <stop offset="0" stop-color="#F7E7BF"/><stop offset=".6" stop-color="#C9962E"/><stop offset="1" stop-color="#7A5512"/>
+  </radialGradient>
+</defs><ellipse cx="50" cy="110" rx="28" ry="5" fill="#1A120D" opacity=".22"/>
+  <path d="M26 96 V105 A24 6 0 0 0 74 105 V96 Z" fill="url(#baidaq-red-body)" stroke="#3F100B" stroke-width="1"/>
+  <path d="M26 96 V105 A24 6 0 0 0 74 105 V96 Z" fill="url(#baidaq-red-shade)"/>
+  <ellipse cx="50" cy="96" rx="24" ry="6" fill="url(#baidaq-red-body)" stroke="#3F100B" stroke-width="1"/>
+  <ellipse cx="50" cy="100.5" rx="23" ry="1.4" fill="url(#baidaq-red-brass)" opacity=".95"/><path d="M33 94 C33 82 37 72 42 67 L58 67 C63 72 67 82 67 94 Z" fill="url(#baidaq-red-body)" stroke="#3F100B" stroke-width="1.1" stroke-linejoin="round"/><path d="M33 94 C33 82 37 72 42 67 L58 67 C63 72 67 82 67 94 Z" fill="url(#baidaq-red-shade)"/><path d="M40 67 L44 56 L56 56 L60 67 Z" fill="url(#baidaq-red-body)" stroke="#3F100B" stroke-width="1.1" stroke-linejoin="round"/><path d="M40 67 L44 56 L56 56 L60 67 Z" fill="url(#baidaq-red-shade)"/><path d="M50 56 V67 M44 56 L46 67 M56 56 L54 67" stroke="#3F100B" stroke-width=".8" opacity=".55"/><circle cx="50" cy="52" r="3.4" fill="url(#baidaq-red-gem)" stroke="#7A5512" stroke-width=".8"/><ellipse cx="50" cy="95.5" rx="19" ry="4.2" fill="#1A120D" opacity=".25"/>
+  <ellipse cx="50" cy="93" rx="19" ry="4.2" fill="url(#baidaq-red-brass)" stroke="#7A5512" stroke-width=".8"/><ellipse cx="43" cy="80" rx="3" ry="8" transform="rotate(-8 43 80)" fill="#fff" opacity=".22"/>
+</svg>

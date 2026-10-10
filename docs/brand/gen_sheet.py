@@ -92,7 +92,16 @@ table{{border-collapse:collapse;font-size:14px}} td,th{{padding:6px 12px;border-
  <div class="card">{board_shatranj()}<h4>Shatranj — unchequered sadu-cloth grid, brass legal-move dots</h4></div>
  <div class="card">{board_mancala()}<h4>Manqala — carved wood, active row glow</h4></div>
 </div>
-<div class="card" style="margin-top:16px;max-width:520px">{svg('pieces/shatranj-concept.svg')}<h4>Shatranj pieces — original abstract silhouettes (concept)</h4></div>
+<div class="card" style="margin-top:16px">
+ <div class="row" style="gap:4px">{''.join(f'<span style="width:110px">{svg(f"pieces/shatranj-{k}-red.svg")}</span>' for k in ("shah","firzan","fil","faras","rukh","baidaq"))}</div>
+ <div class="row" style="gap:4px">{''.join(f'<span style="width:110px">{svg(f"pieces/shatranj-{k}-indigo.svg")}</span>' for k in ("shah","firzan","fil","faras","rukh","baidaq"))}</div>
+ <h4>قطع الشطرنج: شاه · فرزان · فيل · فرس · رخ · بيدق — original turned, glazed pieces with brass collars</h4>
+</div>
+<div class="row" style="margin-top:16px">
+ <div class="card"><div class="row" style="gap:8px">{''.join(f'<span style="width:96px">{svg(f"pieces/dama-{n}.svg")}</span>' for n in ("stone-ivory","sheikh-ivory","stone-ebony","sheikh-ebony"))}</div><h4>الدامة: حجر وشيخ — ivory stone and ebony; the sheikh is two stacked stones with a brass ring</h4></div>
+ <div class="card"><div style="width:300px">{svg("pieces/mancala-seeds.svg")}</div><h4>بذور المنقلة: حصى · نوى تمر · ودع · لؤلؤ</h4></div>
+</div>
+<div class="card" style="margin-top:16px;max-width:560px">{svg("pieces/shatranj-board-showcase.svg")}<h4>Shatranj starting position on the sadu-cloth board</h4></div>
 
 <h2>الحركة · Motion</h2>
 <table class="en"><tr><th>Token</th><th>ms</th></tr>

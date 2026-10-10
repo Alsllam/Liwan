@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 120" role="img" aria-label="Rukh (red)">
+<title>رخ · Rukh</title>
+<defs>
+  <linearGradient id="rukh-red-body" x1="0" x2="1" y1="0" y2="0">
+    <stop offset="0" stop-color="#5E1912"/><stop offset=".28" stop-color="#D46A5C"/><stop offset=".5" stop-color="#A8302A"/><stop offset="1" stop-color="#5E1912"/>
+  </linearGradient>
+  <linearGradient id="rukh-red-shade" x1="0" x2="0" y1="0" y2="1">
+    <stop offset="0" stop-color="#fff" stop-opacity=".18"/><stop offset=".55" stop-color="#fff" stop-opacity="0"/><stop offset="1" stop-color="#000" stop-opacity=".28"/>
+  </linearGradient>
+  <linearGradient id="rukh-red-brass" x1="0" x2="1" y1="0" y2="0">
+    <stop offset="0" stop-color="#7A5512"/><stop offset=".3" stop-color="#F7E7BF"/><stop offset=".55" stop-color="#C9962E"/><stop offset="1" stop-color="#7A5512"/>
+  </linearGradient>
+  <radialGradient id="rukh-red-gem" cx=".35" cy=".3" r=".8">
+    <stop offset="0" stop-color="#F7E7BF"/><stop offset=".6" stop-color="#C9962E"/><stop offset="1" stop-color="#7A5512"/>
+  </radialGradient>
+</defs><ellipse cx="50" cy="108" rx="36" ry="5" fill="#1A120D" opacity=".22"/>
+  <path d="M18 94 V103 A32 6 0 0 0 82 103 V94 Z" fill="url(#rukh-red-body)" stroke="#3F100B" stroke-width="1"/>
+  <path d="M18 94 V103 A32 6 0 0 0 82 103 V94 Z" fill="url(#rukh-red-shade)"/>
+  <ellipse cx="50" cy="94" rx="32" ry="6" fill="url(#rukh-red-body)" stroke="#3F100B" stroke-width="1"/>
+  <ellipse cx="50" cy="98.5" rx="31" ry="1.4" fill="url(#rukh-red-brass)" opacity=".95"/><path d="M28 92 L30 38 Q30 30 37 30 L44 30 L50 44 L56 30 L63 30 Q70 30 70 38 L72 92 Z" fill="url(#rukh-red-body)" stroke="#3F100B" stroke-width="1.1" stroke-linejoin="round"/><path d="M28 92 L30 38 Q30 30 37 30 L44 30 L50 44 L56 30 L63 30 Q70 30 70 38 L72 92 Z" fill="url(#rukh-red-shade)"/><path d="M29.4 60 H70.6 V66 H29.2 Z" fill="url(#rukh-red-brass)" stroke="#7A5512" stroke-width=".7"/><path d="M50 58.5 L53.0 63 L50 67.5 L47.0 63 Z" fill="url(#rukh-red-gem)" stroke="#7A5512" stroke-width=".8"/><ellipse cx="50" cy="93.5" rx="26" ry="4.2" fill="#1A120D" opacity=".25"/>
+  <ellipse cx="50" cy="91" rx="26" ry="4.2" fill="url(#rukh-red-brass)" stroke="#7A5512" stroke-width=".8"/><ellipse cx="39" cy="46" rx="3.2" ry="11" transform="rotate(-8 39 46)" fill="#fff" opacity=".22"/>
+</svg>

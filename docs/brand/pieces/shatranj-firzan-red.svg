@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 120" role="img" aria-label="Firzān (red)">
+<title>فرزان · Firzān</title>
+<defs>
+  <linearGradient id="firzan-red-body" x1="0" x2="1" y1="0" y2="0">
+    <stop offset="0" stop-color="#5E1912"/><stop offset=".28" stop-color="#D46A5C"/><stop offset=".5" stop-color="#A8302A"/><stop offset="1" stop-color="#5E1912"/>
+  </linearGradient>
+  <linearGradient id="firzan-red-shade" x1="0" x2="0" y1="0" y2="1">
+    <stop offset="0" stop-color="#fff" stop-opacity=".18"/><stop offset=".55" stop-color="#fff" stop-opacity="0"/><stop offset="1" stop-color="#000" stop-opacity=".28"/>
+  </linearGradient>
+  <linearGradient id="firzan-red-brass" x1="0" x2="1" y1="0" y2="0">
+    <stop offset="0" stop-color="#7A5512"/><stop offset=".3" stop-color="#F7E7BF"/><stop offset=".55" stop-color="#C9962E"/><stop offset="1" stop-color="#7A5512"/>
+  </linearGradient>
+  <radialGradient id="firzan-red-gem" cx=".35" cy=".3" r=".8">
+    <stop offset="0" stop-color="#F7E7BF"/><stop offset=".6" stop-color="#C9962E"/><stop offset="1" stop-color="#7A5512"/>
+  </radialGradient>
+</defs><ellipse cx="50" cy="108" rx="36" ry="5" fill="#1A120D" opacity=".22"/>
+  <path d="M18 94 V103 A32 6 0 0 0 82 103 V94 Z" fill="url(#firzan-red-body)" stroke="#3F100B" stroke-width="1"/>
+  <path d="M18 94 V103 A32 6 0 0 0 82 103 V94 Z" fill="url(#firzan-red-shade)"/>
+  <ellipse cx="50" cy="94" rx="32" ry="6" fill="url(#firzan-red-body)" stroke="#3F100B" stroke-width="1"/>
+  <ellipse cx="50" cy="98.5" rx="31" ry="1.4" fill="url(#firzan-red-brass)" opacity=".95"/><path d="M27 92 C27 74 31 62 37 56 C42 40 58 40 63 56 C69 62 73 74 73 92 Z" fill="url(#firzan-red-body)" stroke="#3F100B" stroke-width="1.1" stroke-linejoin="round"/><path d="M27 92 C27 74 31 62 37 56 C42 40 58 40 63 56 C69 62 73 74 73 92 Z" fill="url(#firzan-red-shade)"/><path d="M50 57.5 L54.5 64 L50 70.5 L45.5 64 Z" fill="url(#firzan-red-gem)" stroke="#7A5512" stroke-width=".8"/><circle cx="50" cy="38" r="3.4" fill="url(#firzan-red-gem)" stroke="#7A5512" stroke-width=".8"/><ellipse cx="50" cy="93.5" rx="25" ry="4.2" fill="#1A120D" opacity=".25"/>
+  <ellipse cx="50" cy="91" rx="25" ry="4.2" fill="url(#firzan-red-brass)" stroke="#7A5512" stroke-width=".8"/><ellipse cx="41" cy="62" rx="3.5" ry="12" transform="rotate(-8 41 62)" fill="#fff" opacity=".22"/><ellipse cx="50" cy="56" rx="13" ry="2.4" fill="url(#firzan-red-brass)" opacity=".9"/>
+</svg>
