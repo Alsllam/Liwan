@@ -1,5 +1,16 @@
-/// Shatranj (شطرنج), the medieval Arabic ancestor of chess: rules engine for Liwan.
+/// Shatranj (شطرنج), the medieval Arabic ancestor of chess: rules engine,
+/// evaluation and AI for Liwan.
 ///
-/// Placeholder created in step 1 (monorepo setup). The implementation
-/// arrives in step 5, after the rules research in `docs/rules/`.
+/// Rules follow `docs/rules/shatranj.md`; rule numbers (R1…R23) in the
+/// comments refer to that document.
 library;
+
+export 'src/ai.dart';
+export 'src/codec.dart';
+export 'src/evaluation.dart'
+    show evaluateShatranj, scoreShatranjMove, isNoisyShatranjMove, pieceValues;
+export 'src/move.dart';
+export 'src/pieces.dart';
+export 'src/rules.dart';
+export 'src/square.dart';
+export 'src/state.dart';
