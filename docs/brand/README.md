@@ -1,0 +1,234 @@
+# Liwan brand kit · هوية ليوان
+
+Version 0.1 · 2026-10-10 · Status: draft for product-owner review (step 4)
+
+This folder is the single source of the Liwan identity. The mobile app (Flutter `ThemeExtension<AppTokens>`), the admin and web frontend (SCSS custom properties) and every illustration brief use it. Nothing in the product invents its own colors, fonts or motion.
+
+| File | What it is |
+|---|---|
+| `logo/logo-mark.svg` | The mark alone (app icon, avatar, small sizes) |
+| `logo/logo-ar.svg` · `logo/logo-en.svg` | Lockups: mark + wordmark, Arabic-first and English-first |
+| `logo/logo-mono.svg` | One color, `currentColor`, for dark backgrounds, print, embossing |
+| `logo/favicon.svg` | Simplified mark for 16–24 px, with a dark-mode color |
+| `tokens.json` | Design tokens: colors, fonts, sizes, radii, shadows, motion |
+| `tokens.css` | CSS custom properties generated from `tokens.json` (`python3 gen_tokens.py`) |
+| `brand-sheet.html` · `brand-sheet.png` | One-page visual overview of everything below |
+
+---
+
+## 1. Brand idea
+
+**A *liwan* (ليوان / إيوان) is the shaded, open hall of a traditional house, facing the courtyard, where the family sits, guests are received, and games are played in the afternoon.** Liwan the app is that hall made digital: a calm, warm place where generations sit together.
+
+Three words guide every choice: **warm** (family, hospitality, natural materials), **crafted** (made by hand, with care, in real regional techniques), **clear** (easy for a child and a grandparent; nothing ornamental gets in the way of play).
+
+Visual sources are **crafts and architecture of the region, as practiced**, never "Arabian" fantasy:
+
+| Source | What we take from it |
+|---|---|
+| **Sadu weaving** (السدو), Bedouin weaving of the Arabian Peninsula, inscribed on UNESCO's intangible cultural heritage lists (UAE, 2011; Saudi Arabia and Kuwait, 2020) | Palette (madder red, indigo-black, natural ivory), stepped triangles and diamond bands, the rhythm of repeated motifs |
+| **Carved wood** (doors, chests, ceilings of Gulf and Hijazi houses) | Board materials (teak, walnut), carved border patterns, warm browns |
+| **Brass and copper work** (coffee pots, trays, door fittings) | The accent color, highlight and reward moments, inlay on boards |
+| **Palm and palm-frond weaving** (السعف, الخوص) | The secondary green, woven mats as boards, textures |
+| **Architecture**: the liwan arcade, coral-stone houses, wind towers, Andalusian and Abbasid geometry | The logo arch, board borders, the player's "liwan room" backgrounds |
+
+**What we never use** (hard rule 4): camels, desert dunes and oil derricks as shorthand for the region; genies, flying carpets, "Arabian Nights" fantasy; belly-dance or harem imagery; daggers or weapons as decoration; Orientalist paintings as references; Quranic text, the adhan or other religious recitation as decoration or game sound; copied artwork or photographs of museum objects used as assets.
+
+---
+
+## 2. Logo
+
+### 2.1 The mark
+
+The mark is the **arch of a liwan** in sadu red. Inside the opening stands a **brass diamond**, which reads at once as a game piece, a seed and the "eye" diamond common in sadu bands. At the threshold is a row of **sadu triangles** in indigo. It is drawn as plain geometry (64 × 64 grid): an outer pointed arch, an inner opening with an 8-unit wall, three 8-unit triangles, a 12 × 20 diamond with a 5 × 8 inner diamond.
+
+The arch is a domestic, civic form (the hall of a house), not a mihrab; keep the mark away from layouts that make it read as a religious niche (for example, never place text inside the arch or pair it with a dome).
+
+### 2.2 Variants and use
+
+| Variant | Use | Minimum size |
+|---|---|---|
+| `logo-mark.svg` (full color) | App icon foreground, splash, avatars, in-app header | 24 px |
+| `favicon.svg` (simplified: no triangles, no inner diamond) | Browser tab, notification icon, 16–24 px | 16 px |
+| `logo-mono.svg` (`currentColor`) | On photos or dark surfaces, print, embossing, monochrome Android themed icon | 16 px |
+| `logo-ar.svg` | Default lockup (Arabic interface): mark on the right (start side), wordmark to its left | 120 px wide |
+| `logo-en.svg` | English interface: mark on the left, wordmark to its right | 120 px wide |
+
+- Clear space around the mark: at least one quarter of its height on every side.
+- On dark surfaces use `logo-mono.svg` in ivory (`#F3EADB`) or brass (`#D3A443`), or the full-color mark on a raised ivory tile.
+- Never stretch, rotate, recolor outside the palette, add shadows or outlines, or put the mark on a busy pattern.
+
+### 2.3 App icon and splash
+
+- **App icon:** the full-color mark centered on ivory (`#FBF6EE`), arch at 70% of the safe zone. Android adaptive icon: foreground = mark, background = ivory with a faint sadu band at the bottom; monochrome layer = `logo-mono.svg`.
+- **Splash:** mark centered on ivory (light) or night `#14161F` with the mono mark in brass (dark). In-app intro: the arch draws in (stroke, 480 ms), the diamond drops into place and settles (240 ms), total 720 ms, once.
+
+### 2.4 Wordmark
+
+The current lockups set «ليوان» in **Reem Kufi SemiBold** and "Liwan" in **IBM Plex Sans SemiBold** as live text. This is a placeholder. **Recommendation:** commission an Arab calligrapher or type designer to draw a custom Kufic-inspired wordmark for «ليوان», matched by a Latin "Liwan", and deliver both as outlined paths. This keeps the wordmark original, gives credit to a living craft, and makes a good launch story. Until then, the SVGs need the fonts installed to render as intended.
+
+---
+
+## 3. Color
+
+All values live in `tokens.json`. Components use tokens only, never raw hex values.
+
+### 3.1 Core palette
+
+| Token family | Inspiration | Key value | Role |
+|---|---|---|---|
+| **Sadu red** `sadu-50…900` | Madder-dyed wool of sadu weaving | `sadu-600 #9B2C22` | Primary: brand, primary buttons, active states |
+| **Brass** `brass-50…900` | Brass coffee pots, trays, inlay | `brass-500 #C9962E` | Accent: highlights, rewards, focus ring, legal-move dots |
+| **Palm** `palm-50…900` | Palm fronds and woven palm mats | `palm-600 #4C6B2F` | Secondary: success, nature, mancala boards |
+| **Indigo night** `indigo-50…900` | The dark indigo-black of sadu and night skies over the courtyard | `indigo-700 #22304F` | Deep text alternative, dark theme base, second player |
+| **Warm neutrals** `neutral-0…900` | Undyed wool, coral stone, plaster, wood | `neutral-50 #FBF6EE` (ivory surface), `neutral-800 #2A1E17` (text) | Surfaces, text, borders |
+| **Materials** `material.*` | Teak, walnut, palm wood, coral stone, pearl, date pit, cowrie, ebony, ivory-stone | — | Board and piece art only, not UI |
+
+### 3.2 Themes
+
+| Role | Light | Dark |
+|---|---|---|
+| Surface / raised / sunken | `#FBF6EE` / `#FFFFFF` / `#F3EADB` | `#14161F` / `#1C1F2B` / `#0F1118` |
+| Text primary / secondary / muted | `#2A1E17` / `#5C4A3D` / `#7A6656` | `#F3EADB` / `#C9BBA6` / `#A8917A` |
+| Primary / on-primary | `#9B2C22` / `#FFFFFF` | `#E07A6A` / `#14161F` |
+| Accent / on-accent | `#C9962E` / `#14161F` | `#D3A443` / `#14161F` |
+
+Dark mode is "evening in the liwan": an indigo-black night, ivory text, warmer and slightly desaturated red, brass glowing. It is not an inversion of light mode.
+
+### 3.3 Contrast (WCAG 2.x, checked)
+
+| Pair | Ratio | Passes |
+|---|---|---|
+| Text primary on surface (light / dark) | 15.1 / 15.1 | AAA |
+| Text secondary on surface (light / dark) | 7.8 / 9.6 | AAA |
+| Text muted on surface (light / dark) | 5.1 / 6.0 | AA |
+| Primary on surface (light / dark) | 7.0 / 6.2 | AA (AAA light) |
+| On-primary on primary (light / dark) | 7.6 / 6.2 | AA |
+| On-accent on accent (light / dark) | 6.8 / 7.9 | AA |
+| Status text on its tint: success / warning / danger / info | 5.4 / 5.0 / 5.6 / 9.1 | AA |
+
+**Status colors.** Success = palm, warning = dark brass, info = indigo, danger = `#B3261E`. Danger is close in hue to the brand red, so a danger state is **always** shown with an icon and text, never color alone.
+
+### 3.4 Player colors on boards
+
+Two sides must be told apart by people with any type of color blindness, so each pair differs strongly in lightness, and pieces also differ in shape or marking.
+
+| Game | First player | Second player | Lightness contrast |
+|---|---|---|---|
+| Shatranj | Light madder red `#D4574A` (red moves first, honoring the red/black tradition) | Indigo night `#1A2440` | 3.8 : 1 |
+| Dama | Ivory stone `#EFE6D6` | Ebony `#2A211C` | 12.7 : 1 |
+| Mancala (row highlight; seeds are neutral) | Brass `#DDB65E` | Indigo `#22304F` | 6.8 : 1 |
+
+---
+
+## 4. Typography
+
+All four families are under the SIL Open Font License, so they can be bundled in the app and web.
+
+| Role | Arabic | Latin | Notes |
+|---|---|---|---|
+| **Display** (titles, game names, big numbers) | **Reem Kufi** (geometric Kufi; echoes the logo's geometry and architectural lettering) | **IBM Plex Sans** SemiBold | Kufi only at 20 px and above |
+| **Text** (UI, tutorials, rules) | **IBM Plex Sans Arabic** | **IBM Plex Sans** | Designed as a pair: same weights and rhythm in both scripts |
+| **Story** (heritage chapters, quotes, the storyteller) | **Amiri** (Naskh, after the Bulaq Press tradition) | **IBM Plex Serif** | Long reading; calm, bookish voice |
+
+- Type scale (px): 12 · 14 · 16 · 18 · 20 · 24 · 30 · 36. Weights 400/500/600/700.
+- Line height 1.5 for Latin body and **1.7 for Arabic body** (diacritics and descenders need room); 1.25 for headings.
+- Arabic is never letter-spaced and never set in all-caps Latin style; use weight and size for emphasis. Kashida (tatweel) only in display titles, never in body text.
+- Digits: Arabic-Indic digits (٠١٢٣) in the Arabic interface by default, with a setting for Latin digits; tabular numbers for scores and timers.
+- Calligraphy-friendly: the display layer is ready for a custom calligraphic wordmark (§2.4) and for calligraphic game titles drawn per game (e.g. «الشطرنج» in a Kufi-style title for the story intro), commissioned from calligraphers, never traced from existing works.
+
+---
+
+## 5. Board and piece art direction
+
+### 5.1 Principles
+
+1. **Clarity first.** At phone size, every piece is identifiable in under half a second. Silhouette before detail; detail only where it helps.
+2. **Real materials, honestly drawn.** Wood grain, woven textures and brass sheen are suggested with flat shapes and subtle texture, not photo-realism. Light comes from the top start side (top right in Arabic).
+3. **Abstract pieces for Shatranj**, following the abstract style of pieces from the Islamic world (as seen in collections such as the Met's 12th-century set). Our pieces are **original designs** in that spirit, not copies.
+4. **One board layout, many skins.** Every skin keeps the same geometry, contrast and highlight colors, so gameplay never depends on the skin.
+5. **Every skin has a story:** a one-line "inspired by" credit (craft, region, period).
+
+### 5.2 Per game
+
+| Game | Board (default skin) | Pieces / seeds | Unlockable skins |
+|---|---|---|---|
+| **Shatranj** | Unchequered 8 × 8 grid (decision Shatranj D6) drawn as a **woven sadu cloth** with thin indigo grid lines and a stepped-triangle border | Turned, rounded, abstract forms: shāh = a throne-like block with a raised back; firzān = a smaller block with a low dome; fīl = a dome with two small tusk knobs; faras = a dome with one forward wedge; rukh = a block with a V-cleft top; baidaq = a small faceted dome. Two sides: light madder red vs indigo night | Teak with brass inlay; coral-stone tiles; Andalusian tile; chequered "modern" skin |
+| **Dama** | Plain 8 × 8 grid **carved in teak**, with a carved border pattern from Gulf doors | Flat round stones: ivory-stone vs ebony; a **sheikh** (king) is two stones stacked, shown with a brass ring (attested stacking, see `docs/rules/dhama.md`) | Palm-mat board with date-pit and shell stones; sand-and-shell board (beach play) |
+| **Manqala** | 2 × 7 pits **carved in a wooden block**, with the player's row lit by a soft brass or indigo glow | Seeds: smooth pebbles in warm tones; counts always readable (a number badge appears on long-press or when a pit has more than 9) | Date pits on a palm-wood board; cowries; pearls (unlocked late) |
+| **Ḥawālīs** | 4 × 7 pits carved in stone or scooped in sand, as played in Oman | Pebbles or shells | Sand pits on the shore |
+
+### 5.3 Game UI on the board
+
+- Legal-move dots: brass, 30% of square size; capture targets: brass ring.
+- Last move: soft ivory or indigo tint of the from- and to-squares.
+- Check (shāh): a sadu-red pulse on the shāh's square, once, with the word «شاه» shown once in large Kufi.
+- Selected piece lifts 2 px with a soft shadow.
+- Never rely on color alone: legal targets also use shape (dot vs ring); turn is shown with text and an avatar halo.
+
+### 5.4 Illustration style (stories, tutorials, characters)
+
+- Flat, warm, geometric illustration with woven and carved textures; limited palette from §3; soft shading.
+- **People:** families of all ages; men, women, girls and boys; city and village; contemporary and traditional dress shown accurately and without caricature; different regions of the Arab world. Elders are shown as wise and playful, not frail.
+- **The storyteller** (الراوي) is a warm grandparent figure. Two versions (a grandmother and a grandfather) can alternate, so that neither gender is only a background role.
+- Historical scenes (the Abbasid court, Andalusian players) are researched for dress and architecture, and reviewed by a heritage partner before publishing.
+- Faces are friendly and simple; respect modesty norms in dress across the region.
+
+---
+
+## 6. Sound
+
+**Idea: the sounds of real materials in a calm courtyard.** Every sound should feel like it came from the board in your hands.
+
+| Category | Character | Examples |
+|---|---|---|
+| **Board** | Short, dry, natural | Wooden piece set down on wood or cloth; stone on stone (Dama); seeds dropping into a wooden pit, one soft tick per seed, slightly pitched up along a long sowing |
+| **Capture** | A clear but gentle accent | Two stones knocking; pieces gathered into the hand; seeds poured into the store |
+| **Moments** | Warm, short, celebratory without fanfare | Promotion: a light brass chime; check: a soft low drum tap; win: a short phrase on oud or qanun; draw: a calm two-note cadence |
+| **Interface** | Almost silent | Soft taps, a woven-cloth swish for panels |
+| **Ambient (optional, off by default in online games)** | A courtyard: distant birds, a breeze, a coffee pot | Fades out during thinking; never loops audibly |
+
+- Music: short original pieces recorded with regional musicians (oud, qanun, ney, frame drum) in real maqamat. Avoid the clichéd "Arabian" snake-charmer phrase. Music is optional and off during online games by default.
+- No religious recitation or adhan in game audio. The app lowers its own audio when the device's silent mode is on, and has separate volume controls for board, moments, interface and ambient.
+- Loudness: interface sounds −24 LUFS short-term; nothing sharp or high-pitched that startles small children.
+
+---
+
+## 7. Motion
+
+Motion explains what changed, and stays calm. Durations come from `tokens.json` → `motion` (UI tokens follow the frontend and mobile skills: 120 / 200 / 320 ms).
+
+| Moment | Token | Behavior |
+|---|---|---|
+| Piece lift on select | `pieceLift` 90 ms | Rise 2 px, shadow grows |
+| Piece move | `pieceMove` 220 ms, ease-out | Slide along the path; knight (faras) and elephant (fīl) hop in an arc; Dama king slides the full line |
+| Capture | `capture` 180 ms | The captured piece fades and shrinks toward the captor's tray |
+| Dama capture chain | `captureChainStep` 160 ms per jump | Each jump plays in sequence; captured stones vanish at once (Turkish strike rule) |
+| Sowing | `seedSow` 90 ms per seed, `seedRelayPause` 140 ms | Seeds drop one by one; on relay (multi-lap) the pit lifts briefly before the next lap. Long sowings speed up after 12 seeds; tap to skip |
+| Promotion | `promotion` 420 ms | The baidaq turns into a firzān with a brass glint; in Dama a second stone drops onto the man |
+| Check | `check` 300 ms | One red pulse on the shāh's square |
+| AI thinking | `aiThinkingMin` 350 ms | The AI's avatar shows a subtle woven "loading" band; the AI never moves faster than 350 ms, so its move is visible |
+| Result | `resultReveal` 900 ms, `celebration` 1 400 ms | Board dims slightly, the result card rises; on a win a sadu band unrolls across the card with brass sparkles. No confetti explosions or screen shake |
+| Logo intro | `logoIntro` 720 ms | Arch draws in, diamond settles (§2.3) |
+
+- **Reduced motion** (system setting or in-app): moves become instant with a 120 ms cross-fade; sowing shows the final counts with a number pulse; celebrations become a static card.
+- Screen transitions use the skill defaults (shared-axis on mobile, fade and 8 px rise on web), mirrored in RTL.
+
+---
+
+## 8. Voice and tone
+
+- **Arabic first.** Modern Standard Arabic, simple and warm, as a respected relative would speak to the family; short sentences. English is a faithful equal, not a literal translation.
+- Encouraging, never mocking: «حركة جميلة!» / "Lovely move!", «جرّب مرة ثانية» / "Try again". Losing messages always suggest something to try.
+- History is told with care: dates and claims carry sources; uncertain stories are introduced as «تُروى حكاية…» / "A story is told that…".
+
+---
+
+## 9. Credits and inspiration log
+
+Every collectable skin, illustration series and sound set adds a row here when it is created.
+
+| Asset | Inspired by | Region / period | Reference | Made by |
+|---|---|---|---|---|
+| Logo mark | Liwan arcade; sadu triangle band and "eye" diamond | Arabian Peninsula, traditional | General form; no specific object copied | Liwan team (draft) |
+| Palette | Sadu wool dyes, brass, palm, teak | Gulf and Arabian Peninsula | UNESCO intangible heritage listing for Al Sadu | Liwan team (draft) |

@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+  <style>.a{fill:#9B2C22}.b{fill:#C9962E}@media (prefers-color-scheme:dark){.a{fill:#E07A6A}}</style>
+  <!-- Simplified for 16 px: arch + diamond only -->
+  <path class="a" fill-rule="evenodd" d="M12 60 V30 C12 18 21 10 32 4 C43 10 52 18 52 30 V60 Z M21 60 V33 C21 25 26 19 32 14 C38 19 43 25 43 33 V60 Z"/>
+  <path class="b" d="M32 27 L39 38 L32 49 L25 38 Z"/>
+</svg>
